@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iZooky&nbsp;&#124;&nbsp;Provider Registration</title>
+  <meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" type="image/png" href="../assets/icons/iZooky-ico.ico"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css" type="text/css"/>
+</head>
+
+<body class="slab-gray">
+  <nav class="topbar slab-dblue">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-2 col-md-3 topbar-logo">
+					<a href="../index.html">
+						<img src="../assets/logo/izooky-logo-white.png" alt="izooky-logo" id="izooky-logo"/>
+						<img src="../assets/logo/izooky-target.png" alt="izooky-logo" id="izooky-target"/>
+					</a>
+				</div>
+				<div class="col-xs-7 col-md-6 topbar-nav text-center">
+					<ul class="top-link home-nav">
+						<li><a href="../index.html">Users</a></li>
+						<li><a href="../provider.html">Providers</a></li>
+						<li><a href="../about.html">About</a></li>
+						<li><a href="../help.html">Help</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3 col-md-3 topbar-signin">
+					<ul class="top-link signin">
+						<li class="text-right signin-li"><a href="../index.html" class="text-white signin-reg">Sign Out</a></li>
+						<li class="text-right signin-li"><a href="../dashu/u-summary.html" class="signin-reg">Dashboard</a></li>
+						<li class="text-right signin-icon-li"><a href="../dashu/u-summary.html" class="text-white signin-icon-a">
+							<i class="fa fa-dashboard signin-icon"></i>
+						</a></li>
+						<li class="text-right signin-icon-li"><a href="../index.html" class="signin-icon-a">
+							<i class="fa fa-sign-out signin-icon"></i>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+  <main id="register">
+		<div class="container-fluid">
+	    <header class="row">
+	      <div class="col-xs-12 text-center">
+	        <h2 class="text-center">Register for iZooky</h2>
+	      </div>
+	    </header>
+		</div>
+
+    <section class="register-form">
+			<div class="container-fluid">
+	      <div class="row" id="choose-account">
+
+	        <div class="col-xs-12 col-md-8 col-md-offset-2 register-margin">
+	          <h4 id="provider-form-heading">Create a Provider account</h4>
+	          <div class="slab-white registerUser">
+	            <p class="text-center">Choose your plan:</p>
+							<br>
+
+							<div class="row">
+	            	<form action="/" class="register-form-input">
+	                <div class="col-xs-6 choose-account-radio">
+										<div class="sub-desc">
+	                  	<input type="radio" name="subscription" class="choose-radio" value="subscription">
+										</div>
+										<div class="sub-desc">
+	                  	<p>Subscription
+												<span class="font-14">($50/month plus 15% Admin fee per call)</span>
+											</p>
+										</div>
+	                </div>
+	                <div class="col-xs-6 choose-account-radio">
+										<div class="sub-desc">
+	                  	<input type="radio" name="subscription" class="choose-radio" value="subscription">
+										</div>
+										<div class="sub-desc">
+	                  	<p>Pay as you go
+												<span class="font-14">($0/month plus 20% Admin fee per call)</span>
+											</p>
+										</div>
+	                </div>
+	            	</form>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+			            <p class="text-center">Your basic information</p>
+			            <form action="/" class="register-form-input">
+			              <input type="text" name="address" class="form-input form-fname" placeholder="First Name*">
+			              <input type="text" name="address" class="form-input form-lname" placeholder="Last Name*">
+			              <input type="text" name="address" class="form-input form-email" placeholder="Email Address*">
+			              <select name="age" class="select-age">
+			                <option>Your Age*</option>
+			                <option value="January">Below 13</option>
+			                <option value="Febuary">13 or older</option>
+			              </select>
+			            </form>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+			            <p class="text-center">Your account credentials</p>
+			            <form action="/" class="register-form-input">
+			              <input type="text" name="username" class="form-input form-fname" placeholder="Username*">
+			              <input type="password" name="address" class="form-input form-fname" placeholder="Password*">
+			            </form>
+								</div>
+							</div>
+							<br>
+
+							<div class="row">
+								<div class="col-xs-12">
+			            <form action="/" class="register-form-input">
+			              <input id="accept-checkbox" type="checkbox" name="accept-terms" value="Accept Terms">
+			              <p class="terms-link">By clicking accept, you agree to our <a href="terms.html">Terms of Service</a></p>
+			            </form>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="izooky-btn-group form-btn-group ">
+										<a href="register.html" class="btn btn-sm yellow">Back</a>
+										<a href="confirmation.html" class="btn btn-sm sky">Submit</a>
+									</div>
+								</div>
+							</div>
+
+	          </div>
+	        </div>
+
+	      </div>
+			</div>
+    </section>
+
+  </main><!-- END REGISTER FORM -->
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <div class="col-xs-12 columns text-center">
+          <ul>
+            <li class="footer-link"><a href="../index.html">Users</a></li>
+            <li class="footer-link"><a href="../provider.html">Providers</a></li>
+            <li class="footer-link"><a href="../about.html">About</a></li>
+            <li class="footer-link"><a href="../index.html">
+              <img src="../assets/logo/izooky-target.png" class="footer-logo"/></a>
+            </li>
+            <li class="footer-link"><a href="../help.html">Help</a></li>
+            <li class="footer-link"><a href="register.html">Register</a></li>
+            <li class="footer-link"><a href="../signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- END CLASS FOOTER -->
+  </footer>
+</body>
+</html>

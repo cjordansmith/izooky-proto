@@ -1,0 +1,943 @@
+/* ==========================================================================
+   PAGE - MAIN STYLES
+   ========================================================================== */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-size: normal;
+    letter-spacing: -0.05rem;
+    color: rgba( 7, 42, 65, 0.87);
+    background: transparent;
+}
+
+#call-int {
+    width: 100vw;
+    min-width: 960px;
+    height: 100vh;
+    background: #e0e0e0;
+}
+
+#section-left,
+#section-right {
+    padding: 0;
+    position: relative;
+}
+
+#section-left {
+    margin: 0;
+    min-width: 600px;
+}
+
+#section-right {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.sections {
+    background: transparent;
+    margin: 2vh;
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 3.7rem;
+    padding: 0;
+    background: #55b1ed;
+    color: rgba( 255, 255, 255, 1);
+}
+
+
+header {
+    box-shadow: 0px 2px 2px rgba( 0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 1;
+}
+.provider-video-header {
+    background:#072a41
+}
+
+/* ==========================================================================
+   SECTION - VIDEO STYLES
+   ========================================================================== */
+
+#video {
+    height: 70vh;
+    padding: 0em;
+    position: relative;
+    background: transparent;
+}
+
+header#video-header {
+    z-index: 10000;
+    padding: 0 0.8em;
+}
+header#video-header i {
+    font-size: 2.6em;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+
+}
+header#video-header div {
+    padding: 0;
+}
+
+header#video-header h3 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+header#video-header h4 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+header#video-header i {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    font-size: 1.rem;
+    line-height: 1.2em;
+    margin-right: 8px;
+}
+header#video-header button {
+    display: inline-block;
+    line-height: 1.2em;
+    font-size: 1rem;
+    margin-right: 1rem
+}
+
+header#video-header p {
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1.4rem;
+    margin: 0;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+    #video-header p {
+        font-size: 1.2vw;
+    }
+}
+
+
+/* ==========================================================================
+   SECTION - BOTTOM BAR STYLES
+   ========================================================================== */
+
+#bar {
+    height: 24vh;
+    background: #ffffff;
+    overflow-y: scroll;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.4);
+}
+
+#bar img {
+    border: 1px solid #e0e0e0;
+}
+
+#bar img:hover {
+    border: 2px solid #55b1ed;
+}
+
+#caller-1 {
+    background-image: url(../img/user1.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 19vh;
+    width: 360px;
+    display: block;
+    z-index: 2333;
+}
+#caller-2 {
+    background-image: url(../img/user2.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 19vh;
+    width: 360px;
+    display: block;
+    z-index: 2333;
+}
+#caller-2 {
+    background-image: url(../img/user2.jpg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 19vh;
+    width: 360px;
+    display: block;
+    z-index: 2333;
+}
+#add-user-call {
+    background-image: url(../img/user3.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 19vh;
+    width: 360px;
+    display: block;
+    z-index: 2333;
+    position: relative;
+}
+#bar p {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba( 0, 0, 0, 0.30);
+}
+
+#bar i {
+    position: absolute;
+    top: 50%;
+    font-size: 2.6rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    color: rgba( 0, 0, 0, 0.30);
+}
+
+
+/* ==========================================================================
+   SECTION - TAB STYLES
+   ========================================================================== */
+
+#tabs {
+    margin-left: 0;
+    height: 96vh;
+    padding: 3.7rem 0 0 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.4);
+    position: relative;
+}
+
+#tab1,
+#tab2,
+#tab3,
+#tab4 {
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+header#tabs-header {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tabs-header ul {
+    width: 100%;
+    display: block;
+    height: 3.7rem;
+    margin: 0;
+    border: none;
+}
+
+#tabs-header li {
+    border: none;
+    display: inline-block;
+    width: 25%;
+    height: 3.7rem;
+    margin: 0 0;
+    float: left;
+}
+
+#tabs-header a {
+    border: none;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    height: 3.7rem;
+    line-height: 3.7rem;
+    font-weight: 700;
+    color: rgba( 255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: -0.05rem;
+}
+
+ul#tab .active {
+    display: inline-block;
+    background: rgba( 13, 78, 120, 0.1);
+    border-bottom: none;
+    color: rgba( 255, 255, 255, 1);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom: 5px solid #fcb240;
+}
+
+.tab-content {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: none;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tab-content h5 {
+    font-size: 1.2em;
+    letter-spacing: 0.25px;
+    margin: 0rem 0rem 0.3rem 0rem;
+}
+
+.tab-content p {
+    line-height: 1.6em;
+    font-size: 1em;
+    padding-left: .75em;
+    margin: 0rem 0rem 0rem .2rem;
+    color: rgba( 0, 0, 0, 0.54);
+}
+
+.call-details-section {
+    display: block;
+    width: 100%;
+    min-height: 6rem;
+    margin: 0;
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.12);
+}
+
+@media (max-width: 1024px) {
+    #tab a {
+        font-size: .8rem;
+    }
+}
+
+#tab4 h5 {
+    font-size: 1.2em;
+    letter-spacing: 0.25px;
+    margin: 0rem 0rem 0.3rem 0rem;
+    line-height: 1.6rem;
+    height: 1.6rem;
+    display: block;
+}
+
+#tab4 p {
+    line-height: 1.6em;
+    height: 1.6rem;
+    font-size: 1em;
+    padding-left: .75em;
+    margin: 0rem 0rem 0rem .2rem;
+    color: rgba( 0, 0, 0, 0.54);
+}
+#bar-volume {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#bar-chat {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+
+#bar-volume, #bar-chat {
+    width: 50px;
+}
+
+/* ==========================================================================
+   TAB - CALL DETAILS STYLES
+   ========================================================================== */
+
+#call-details {
+    display: block;
+    padding: 0;
+}
+
+#share {
+    display: block;
+    padding: 0;
+}
+.username {
+    float: right;
+    padding-right: 4rem;
+    color: #2980b9;
+}
+
+
+/* ==========================================================================
+   TAB - CHAT STYLES
+   ========================================================================== */
+
+#tab2 {}
+
+#tab4 {
+    height: 86vh;
+    padding: 0.75rem;
+}
+
+#chat-body {
+    height: 100%;
+    padding: 0.75rem;
+    margin: 0;
+    position: relative;
+}
+
+#chat-conv {
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid rgba( 0, 0, 0, 0.12);
+    padding: 0;
+    margin: 0;
+}
+#chat-tabs {
+    width: 100%;
+    height: 2.5em;
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    border-top: 1px solid rgba( 0, 0, 0, 0.12);
+    padding: 0;
+    margin: 0;
+    background: #fefefe;
+}
+#chat-tabs div {
+    padding: 0;
+}
+#chat-tabs div:hover {
+    background: rgba( 0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#chat-tabs p {
+    text-align: center;
+    height: 2.5em;
+    line-height: 2.5em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid rgba( 0, 0, 0, 0.12);
+}
+input#user-chat-text {
+    height: 3em;
+    line-height: 3em;
+    margin: 0;
+    border: none;
+    background: #f5f5f5;
+    color: rgba( 0, 0, 0, 0.5);
+}
+
+input#user-chat-text:focus {
+    background: #ffffff;
+    color: rgba( 0, 0, 0, 0.70);
+    border: none;
+}
+
+input#chat-submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 3em;
+    width: 4em;
+    font-weight: 700;
+    border: none;
+    background: #0d4e78;
+    color: rgba( 255, 255, 255, 0.87);
+}
+
+input#chat-submit:active {
+    background: rgba( 41, 128, 185, 0.3);
+}
+
+.chat-example-user {
+    padding: 0;
+    text-align: right;
+}
+
+.chat-example-other {
+    padding: 0;
+}
+
+#chat-body img {
+    margin: 0 0.5rem 0 0;
+    display: inline-block;
+    padding: 0;
+    border: .1rem solid rgba( 13, 78, 120, 0.2);
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    vertical-align: top;
+}
+
+#chat-body .no-av {
+    margin: 0 0.5rem 0 0;
+    display: inline-block;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgba( 13, 78, 120, 0.1);
+    border: 0.1rem solid rgba( 13, 78, 120, 0.2);
+    border-radius: 50%;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    width: 2.6rem;
+    letter-spacing: 0.1rem;
+    vertical-align: top;
+}
+
+#user-av-group {}
+
+#chat-body p {
+    font-size: 1rem;
+    display: inline-block;
+    height: auto;
+    line-height: 1.6rem;
+    margin: 0 auto;
+    padding: .5rem;
+    border-radius: .6rem;
+    background: rgba( 13, 78, 120, 0.1);
+    border: 0.1rem solid rgba( 13, 78, 120, 0.2);
+    color: rgba( 0, 0, 0, 0.70);
+    vertical-align: middle;
+    max-width: 75%;
+}
+
+.chat-example {
+    padding: 0.25rem 0;
+}
+
+#prov-chat1,
+#prov-chat2,
+#prov-chat3,
+#prov-chat4 {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+#prov-chat1 p,
+#prov-chat2 p,
+#prov-chat3 p,
+#prov-chat4 p {
+    background: rgba( 13, 78, 120, 0.1);
+    box-shadow: 0px 3px 5px rgba( 0, 0, 0, 0.4);
+}
+
+#user-chat1,
+#user-chat2,
+#user-chat3 {
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+#user-chat1 p,
+#user-chat2 p,
+#user-chat3 p {
+    background: #55b1ed;
+    color: rgba( 255, 255, 255, 0.87);
+    box-shadow: 0px 3px 5px rgba( 0, 0, 0, 0.4);
+}
+
+
+/* ==========================================================================
+   TAB - SHARE STYLES
+   ========================================================================== */
+
+#share i {
+    font-size: 1.6rem;
+    margin: 1rem 0.75rem 0 0.75rem;
+}
+
+#share p {
+    line-height: 1.6rem;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.pdf {
+    color: #eb6557;
+}
+
+.doc {
+    color: #2980ba;
+}
+
+.xls {
+    color: #2ecc71;
+}
+
+.img {
+    color: #0d4e78;
+}
+
+.video {
+    color: #0d4e78;
+}
+
+.link {
+    color: #55b1ed;
+}
+
+
+/* ==========================================================================
+   VIDEO - FORM STYLES
+   ========================================================================== */
+
+form#login,
+form#call {
+    height: 3.4em;
+    width: 100%;
+}
+
+.graphic {
+    width: 20%;
+    height: auto;
+    position: relative;
+    fill: none;
+    display: inline-block;
+}
+
+.icon {
+    color: #ddd;
+    font-size: 150%;
+}
+
+button {
+    display: block;
+    position: relative;
+}
+
+
+/* ==========================================================================
+   VIDEO - CONTAINER STYLES
+   ========================================================================== */
+
+#video-section {
+    position: absolute;
+    padding: 0em;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.4);
+}
+
+#video-screen {
+    background: #ffffff;
+    /* For browsers that do not support gradients */
+    background-image: url(/assets/img/before-call.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.md-effect-13.md-modal {
+    border-radius: 0px;
+    border: none;
+}
+
+.md-modal {
+    background-color: rgba(25, 25, 25, .9);
+    height: 100%;
+    z-index: 2000;
+    border-radius: 0px;
+    border: none;
+    visibility: hidden;
+}
+
+.md-show {
+    visibility: visible;
+    border: 3px double #f6f8f8;
+    border-radius: 8px;
+}
+
+.md-content {
+    color: #ffffff;
+    background: #444e4f;
+    border-radius: 0px;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+#vid-box {
+    background-color: #333333;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    border-radius: 0px;
+    border: none;
+    overflow: hidden;
+}
+
+#vid-box video {
+    width: 100%;
+    height: 175%;
+    margin-top: -12.5%;
+}
+
+
+/* ==========================================================================
+   VIDEO - CONTROLS STYLES
+   ========================================================================== */
+
+#controls {
+    width: 100%;
+    min-width: 600px;
+    height: 5em;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    text-align: center;
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#controls img {
+    height: 3.5vw;
+    min-height: 2.8rem;
+    max-height: 3.2rem;
+    width: auto;
+    margin: 1.25rem .3vw .75rem .3vw;
+}
+
+
+/* ==========================================================================
+   VIDEO - INPUT FIELD STYLES
+   ========================================================================== */
+
+.input {
+    position: relative;
+    width: 85%;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.input__field {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #f0f0f0;
+    color: #aaa;
+    font-weight: 400;
+    font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    /* for box shadows to show on iOS */
+    color: #19a2c6;
+    font-size: 1.25em;
+}
+
+.input__field:focus {
+    outline: none;
+    background: transparent;
+}
+
+.login-input-temp {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 3.2rem;
+    left: 0.75rem;
+}
+
+.login-row {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+#tab4 form {
+    padding: 0.75rem;
+}
+
+#tab4-h5 h5 {
+    position: absolute;
+    top: 200px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   VIDEO - INPUT BUTTON STYLES
+   ========================================================================== */
+
+.cbutton {
+    height: 1.25em;
+    width: 15%;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #19a2c6;
+    font-size: 2em;
+}
+
+.cbutton.cbutton--click,
+.cbutton:focus {
+    outline: none;
+    color: #3c8ddc;
+}
+
+.cbutton__text {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cbutton::after {
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    pointer-events: none;
+}
+#billing-controls {
+    padding: 1rem;
+    text-align: center;
+}
+#billing-controls i {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+#billing-controls button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+
+
+/* ==========================================================================
+BILLING SWITCH
+========================================================================== */
+.billing-label {
+    display: inline-block;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    line-height: 36px;
+    font-size: 1rem;
+    vertical-align:top;
+}
+
+.onoffswitch {
+    position: relative;
+    width: 72px;
+    height: 36px;
+    padding: 18px 0;
+    margin-top: 0;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.onoffswitch-inner {
+    display: block;
+    border-radius: 50%;
+    width: 72px;
+    margin-left: -36px;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 72px;
+    height: 36px;
+    padding: 0;
+    padding: 18px 0;
+    line-height: 36px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #2ECC71;
+    color: #FFFFFF;
+    border: none;
+    width: 36px;
+    height: 36px;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding: 0;
+    background-color: #EEEEEE;
+    color: #999999;
+    border: none;
+    margin: 0;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 12px;
+    margin: 9px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: ;
+    border: 2px solid #999999;
+    border-radius: 0px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    left: -36px;
+}

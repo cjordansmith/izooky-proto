@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Dashboard &#124; Profile &amp; Settings</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="shortcut icon" type="image/png" href="assets/icons/iZooky-ico.ico"/>
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- NAV TOPBAR -->
+            <nav class="topbar slab-dblue">
+                <div class="content">
+                    <div class="row">
+                        <div class="small-1 columns">
+                            <a href="index.html"><div class="top-logo"></div></a>
+                        </div>
+                        <div class="small-4 columns">
+                            <ul class="top-link">
+                                <li><a href="index.html">Users</a></li>
+                                <li><a href="provider.html">Providers</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="help.html">Help</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="small-2 columns">
+                            <ul class="top-link signin">
+                                <li><a href="pdash-profile.html" class="text-white"><i class="fa fa-cog"></i></a></li>
+                                <li><a href="index.html">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- END ROW -->
+                </div><!-- END CONTENT -->
+            </nav>
+            <!-- END NAV TOPBAR -->
+
+            <!-- NAV DASH-NAV -->
+            <div class="row provider-nav" id="dash-nav">
+                <div class="content">
+                    <div class="small-6 column">
+                        <ul class="dash-link-welcome">
+                            <li>Welcome, Zubin</li>
+                            <li class="header-account-type">Provider Account
+                                <a href="udash-summary.html" class="header-account-change">(Change)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="small-6 column" >
+                        <ul class="dash-nav-links">
+                            <li class="dash-current"><a href="pdash-summary.html">Overview</a></li>
+                            <li><a href="search/search.html">Provider Search</a></li>
+                            <li><a href="call/provider-call.html">Make a Call</a></li>
+                            <li><a href="pdash-summary.html">Address Book</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- END NAV DASH-NAV -->
+
+            <div class="row" id="main">
+                <!-- SECTION CLASS CONTENT -->
+                <div class="content">
+                    <!-- COLUMN NAVIGATION -->
+                    <div class="small-3 column" id="col-nav">
+                        <a href="pdash-summary.html">
+                            <div class="col-link">
+                                <i class="fa fa-dot-circle-o"></i>
+                                <h5>Summary</h5>
+                            </div>
+                        </a>
+                        <a href="pdash-profile.html">
+                            <div class="col-link">
+                                <i class="fa fa-user"></i>
+                                <h5>Profile &amp; Settings</h5>
+                            </div>
+                        </a>
+                        <a href="pdash-professional.html">
+                            <div class="col-link icon-current">
+                                <i class="fa fa-building"></i>
+                                <h5>Professional Bio</h5>
+                            </div>
+                        </a>
+                        <a href="pdash-payment.html">
+                            <div class="col-link">
+                                <i class="fa fa-credit-card-alt"></i>
+                                <h5>Payment Details</h5>
+                            </div>
+                        </a>
+                        <a href="pdash-billing.html">
+                            <div class="col-link">
+                                <i class="fa fa-book"></i>
+                                <h5>Billing History</h5>
+                            </div>
+                        </a>
+                        <a href="pdash-insurance.html">
+                            <div class="col-link">
+                                <i class="fa fa-heartbeat"></i>
+                                <h5>Accepted Insurance</h5>
+                            </div>
+                        </a>
+                        <a href="pdash-social.html">
+                            <div class="col-link">
+                                <i class="fa fa-comments-o"></i>
+                                <h5>Social</h5>
+                            </div>
+                        </a>
+                        <img src="assets/img/ad_1.png" alt="Ad Test" id="nav-ad">
+                    </div>
+                    <!-- END COLUMN NAVIGATION -->
+
+                    <!-- SECTION ID DASH BODY -->
+                    <section class="small-9 column dash-body">
+                        <div class="section-heading provider-heading">
+                            <h2>Professional Bio<i class="fa fa-dot-circle-o"></i></h2>
+                        </div>
+
+                        <!-- SECTION SUMMARY BODY-->
+                        <section class="dash-inner">
+                            <section class="dash-section" id="dash-btns">
+                                <div class="row dash-row">
+                                    <div class="small-12 column">
+                                        <h4>Use information from LinkedIn?
+                                        <a href="pdash-professional.html" class="btn btn-sm dblue">LinkedIn</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- SECTION ID DASH-PROFESSIONAL -->
+                            <section class="dash-section" id="dash-professional">
+                                <header>
+                                    <h3>Professional Summary</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Field</p>
+                                            <p>Specialty</p>
+                                        </div>
+                                        <div class="small-3 column">
+                                            <p>Family Practice</p>
+                                            <p>Pediatrics</p>
+                                        </div>
+                                        <div class="small-2 column text-right dash-profile-label">
+                                            <p>Title</p>
+                                            <p>Experience</p>
+                                        </div>
+                                        <div class="small-3 small-pull-1 column">
+                                            <p>MD</p>
+                                            <p>24 years</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Tags</p>
+                                            <p>Tagline</p>
+                                        </div>
+                                        <div class="small-9 column">
+                                            <p>Doctor; pediatrics; family; practice;</p>
+                                            <p>This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="small-12 column profile-row-last">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Primary Language</p>
+                                            <p>Other Language(s)</p>
+                                        </div>
+                                        <div class="small-9 column">
+                                            <p>English</p>
+                                            <p>Spanish</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <!-- END SECTION DASH-PROFESSIONAL -->
+
+                            <!-- SECTION ID DASH-EDUCATION -->
+                            <section class="dash-section" id="dash-education">
+                                <header>
+                                    <h3>Education</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>School</p>
+                                            <p>Degree</p>
+                                            <p>Graduated in</p>
+                                        </div>
+                                        <div class="small-9 column">
+                                            <p>University of Kansas Medical School</p>
+                                            <p>Bachelors of Medicine</p>
+                                            <p>1988</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>School</p>
+                                            <p>Degree</p>
+                                            <p>Graduated in</p>
+                                        </div>
+                                        <div class="small-9 column">
+                                            <p>University of Missouri - Kansas City</p>
+                                            <p>Masters of Surgury</p>
+                                            <p>1991</p>
+                                        </div>
+                                    </div>
+                                </div><!-- end row -->
+                            </section>
+                            <!-- END SECTION DASH-EDUCATION -->
+
+                            <!-- SECTION ID DASH-LICENSE -->
+                            <section class="dash-section" id="dash-license">
+                                <header>
+                                    <h3>License</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>License</p>
+                                            <p>License #</p>
+                                            <p>Issued</p>
+                                            <p>Renewed</p>
+                                            <p>Expires</p>
+                                            <p>Region(s)</p>
+                                        </div>
+                                        <div class="small-9 column">
+                                            <p>Department of Health</p>
+                                            <p>254458744589</p>
+                                            <p>July, 01 1992</p>
+                                            <p>July, 01 2015</p>
+                                            <p>July, 01 2018</p>
+                                            <p>Missouri, Kansas</p>
+                                        </div>
+                                    </div>
+                                </div><!-- end row -->
+                            </section>
+                            <!-- END SECTION DASH-LICENSE -->
+
+                            <!-- SECTION ID DASH-AWARDS -->
+                            <section class="dash-section" id="dash-awards">
+                                <header>
+                                    <h3>Recognition &amp; Awards</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+                                    <div class="small-12 column profile-row-last">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Recognition</p>
+                                            <p>Awarded</p>
+                                        </div>
+                                        <div class="small-9 column">
+                                            <p>Florey Medal</p>
+                                            <p>2013</p>
+                                        </div>
+                                    </div>
+                                </div><!-- end row -->
+                            </section>
+                            <!-- END SECTION DASH-QUALIFICATIONS -->
+
+                            <!-- SECTION ID DASH-COMPANY -->
+                            <section class="dash-section" id="dash-company">
+                                <header>
+                                    <h3>Company Information</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Company Name</p>
+                                        </div>
+                                        <div class="small-3 column">
+                                            <p>Leawood Family Clinic</p>
+                                        </div>
+                                        <div class="small-2 column text-right dash-profile-label">
+                                            <p>Category</p>
+                                        </div>
+                                        <div class="small-3 small-pull-1 column">
+                                            <p>Family Practice</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="small-12 column profile-row">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Street</p>
+                                            <p>Suite</p>
+                                            <p>City</p>
+                                        </div>
+                                        <div class="small-3 column">
+                                            <p>11221 S Main St</p>
+                                            <p>212</p>
+                                            <p>Overland Park</p>
+                                        </div>
+                                        <div class="small-2 column text-right dash-profile-label">
+                                            <p>State</p>
+                                            <p>Zip</p>
+                                            <p>Country</p>
+                                        </div>
+                                        <div class="small-3 small-pull-1 column">
+                                            <p>Kansas</p>
+                                            <p>66212</p>
+                                            <p>United States</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="small-12 column profile-row-last">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Work Phone</p>
+                                            <p>Cell Phone</p>
+                                        </div>
+                                        <div class="small-3 column">
+                                            <p>913.555.6768</p>
+                                            <p>913.555.9835</p>
+                                        </div>
+                                        <div class="small-2 column text-right dash-profile-label">
+                                            <p>Work Email</p>
+                                            <p>Alt Email</p>
+                                        </div>
+                                        <div class="small-3 small-pull-1 column">
+                                            <p>zubin@work.com</p>
+                                            <p>&nbsp;</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- END SECTION DASH-COMPANY -->
+
+                            <!-- SECTION ID DASH-RATES -->
+                            <section class="dash-section" id="dash-rates">
+                                <header>
+                                    <h3>Rates</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+
+                                    <div class="small-12 column profile-row-last">
+                                        <div class="small-3 column dash-profile-label">
+                                            <p>Per minute</p>
+                                            <p>Per 30 minutes</p>
+                                        </div>
+                                        <div class="small-3 column">
+                                            <p>$2.50</p>
+                                            <p>$65.00</p>
+                                        </div>
+                                        <div class="small-2 column text-right dash-profile-label">
+                                            <p>Per hour</p>
+                                            <p>Special</p>
+                                        </div>
+                                        <div class="small-3 small-pull-1 column">
+                                            <p>$100.00</p>
+                                            <p>(none)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- END SECTION DASH-RATES -->
+
+                            <!-- SECTION ID DASH-SOCIAL -->
+                            <section class="dash-section" id="dash-social">
+                                <header>
+                                    <h3>Social</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+                                    <div class="small-3 column dash-profile-label">
+                                        <p>Facebook</p>
+                                        <p>Twitter</p>
+                                        <p>Google&plus;</p>
+                                        <p>Website</p>
+                                    </div>
+                                    <div class="small-9 column">
+                                        <p><a href="/">Leawood Family Clinic</a></p>
+                                        <p><a href="/">@leawood_family_clinic</a></p>
+                                        <p><a href="/">@leawood_family_clinic</a></p>
+                                        <p><a href="/">https://www.leawoodfamilyclinic.com/</a></p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- END SECTION ID DASH-SOCIAL -->
+
+                            <!-- SECTION ID DASH-SETTINGS -->
+                            <section class="dash-section" id="dash-settings">
+                                <header>
+                                    <h3>Dashboard Settings</h3>
+                                    <i class="fa fa-sort-desc "></i>
+                                    <a href="/">edit</a>
+                                </header>
+
+                                <div class="row dash-row">
+                                    <div class="small-3 column dash-profile-label">
+                                        <p>Language</p>
+                                        <p>Time Zone</p>
+                                    </div>
+                                    <div class="small-7 small-pull-2 column">
+                                        <p>English US</p>
+                                        <p>
+                                            <select name="timezone">
+                                                <option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
+                                                <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
+                                                <option value="-10" >(GMT -10:00) Hawaii</option>
+                                                <option value="-9"  >(GMT -9:00) Alaska</option>
+                                                <option value="-8"  >(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                                                <option value="-7"  >(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                                                <option value="-6"  selected="selected">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                                                <option value="-5"  >(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                                                <option value="-4.5">(GMT -4:30) Caracas</option>
+                                                <option value="-4"  >(GMT -4:00) Atlantic Time (Canada), La Paz, Santiago</option>
+                                                <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                                                <option value="-3"  >(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                                <option value="-2"  >(GMT -2:00) Mid-Atlantic</option>
+                                                <option value="-1"  >(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                                                <option value="0"   >(GMT) Western Europe Time, London, Lisbon, Casablanca, Greenwich</option>
+                                                <option value="1"   >(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                                                <option value="2"   >(GMT +2:00) Kaliningrad, South Africa, Cairo</option>
+                                                <option value="3"   >(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                                <option value="3.5" >(GMT +3:30) Tehran</option>
+                                                <option value="4"   >(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi</option>
+                                                <option value="4.5" >(GMT +4:30) Kabul</option>
+                                                <option value="5"   >(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                                <option value="5.5" >(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi</option>
+                                                <option value="5.75">(GMT +5:45) Kathmandu</option>
+                                                <option value="6"   >(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                                <option value="6.5" >(GMT +6:30) Yangon, Cocos Islands</option>
+                                                <option value="7"   >(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                                <option value="8"   >(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                                                <option value="9"   >(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                                                <option value="9.5" >(GMT +9:30) Adelaide, Darwin</option>
+                                                <option value="10"  >(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                                                <option value="11"  >(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                                                <option value="12"  >(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row dash-row">
+                                    <div class="small-12 column main-contact-btns text-center">
+                                        <a href="udash-summary.html" class="btn btn-sm yellow">Cancel</a>
+                                        <a href="choose-account.html" class="btn btn-sm dblue">Save</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- END SECTION ID DASH-SETTINGS -->
+
+                        </section>
+                        <!-- END CLASS SUMMARY BODY -->
+                    </section>
+                    <!-- END ID DASH BODY -->
+                </div>
+                <!-- END CONTENT -->
+            </div>
+            <!-- END MAIN -->
+
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <div class="small-8 small-offset-2 columns text-center">
+                            <ul>
+                                <li class="footer-link"><a href="index.html">Users</a></li>
+                                <li class="footer-link"><a href="provider.html">Providers</a></li>
+                                <li class="footer-link"><a href="about.html">About</a></li>
+                                <li class="footer-link"><a href="index.html">
+                                    <img src="assets/logo/izooky-target.png" class="footer-logo"/></a>
+                                </li>
+                                <li class="footer-link"><a href="help.html">Help</a></li>
+                                <li class="footer-link"><a href="register.html">Register</a></li>
+                                <li class="footer-link"><a href="signin.html">Sign In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- END CONTAINER -->
+    </body>
+</html>

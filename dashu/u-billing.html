@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Dashboard &#124; Billing History</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" type="image/png" href="../assets/icons/iZooky-ico.ico"/>
+
+	<!-- CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+
+</head>
+
+<body>
+	<!-- NAV TOPBAR -->
+  <nav class="topbar-dash slab-dblue">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- DASH-TOPBAR -->
+        <div class="col-xs-12" id="dash-topbar">
+          <!-- TOPBAR-LOGO -->
+          <div class="topbar-logo-dash">
+            <a href="../index.html" id="dash-logo">
+              <img src="../assets/logo/izooky-target-50.png" alt="izooky-logo" />
+            </a>
+          </div>
+          <!-- TOPBAR-NAV -->
+          <div class="topbar-nav-dash">
+            <ul class="top-link-dash dash-nav">
+              <a href="u-summary.html">
+                <li class="text-right">Overview</li>
+              </a>
+              <a href="../search/search.html">
+                <li class="text-center">Search</li>
+              </a>
+              <a href="../call/u-call.html">
+                <li class="text-left">Call</li>
+              </a>
+            </ul>
+          </div>
+          <!-- TOPBAR-SIGNIN -->
+          <div class="topbar-signin-dash">
+            <ul class="top-link-dash signin">
+              <a href="../signin.html" class="text-white signin-reg">
+                <li><i class="fa fa-exchange"></i></li>
+              </a>
+              <a href="u-settings.html" class="text-white signin-reg icon-center">
+                <li><i class="fa fa-cog"></i></li>
+              </a>
+              <a href="../index.html" class="text-white signin-reg">
+                <li><i class="fa fa-sign-out"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- END CONTAINER -->
+  </nav>
+  <!-- END NAV DASH-NAV -->
+  <nav id="dashNav">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul id="dashNav-menu">
+            <a href="u-summary.html">
+              <li class="dashNav">Summary</li>
+            </a>
+            <a href="u-account.html">
+              <li class="dashNav">Account</li>
+            </a>
+            <a href="u-payments.html">
+              <li class="dashNav">Payments</li>
+            </a>
+            <a href="u-billing.html">
+              <li class="dashNav nav-current">Billing</li>
+            </a>
+            <a href="u-insurance.html">
+              <li class="dashNav">Insurance</li>
+            </a>
+          </ul>
+        </div><!-- END COL -->
+      </div><!-- END ROW -->
+  </nav>
+
+<!-- DASHBOARD MAIN -->
+	<main id="dashMain">
+		<div class="row">
+
+<!-- Bank Accounts section -->
+			<section class="col-xs-12 dash-section">
+				<header>
+					<h3>Bank Accounts</h3>
+					<h5><a href="/">Add or Remove</a></h5>
+					<i class="fa fa-sort-desc "></i>
+				</header>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							</label>
+						</td>
+						<th>Bank of America</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Checking account</td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							</label>
+						</td>
+						<th>UMB</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Savings account</td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+			</section>
+
+<!-- Credit Cards section -->
+			<section class="col-xs-12 dash-section">
+				<header>
+					<h3>Credit Cards</h3>
+					<h5><a href="/">Add or Remove</a></h5>
+					<i class="fa fa-sort-desc "></i>
+				</header>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							</label>
+						</td>
+						<th>Discover</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							</label>
+						</td>
+						<th>CitiBank Card</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							</label>
+						</td>
+						<th>American Express</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+
+			</section>
+
+<!-- Health Savings Accounts section -->
+			<section class="col-xs-12 dash-section">
+				<header>
+					<h3>Health Savings Accounts</h3>
+					<h5><a href="/">Add or Remove</a></h5>
+					<i class="fa fa-sort-desc "></i>
+				</header>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							</label>
+						</td>
+						<th>HealthEquity</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+
+						</td>
+						<th></th>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+
+<!-- Flexible Spending Accounts section -->
+			<section class="col-xs-12 dash-section">
+				<header>
+					<h3>Flexible Spending Accounts</h3>
+					<h5><a href="/">Add or Remove</a></h5>
+					<i class="fa fa-sort-desc "></i>
+				</header>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+							<label class="radio-inline">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							</label>
+						</td>
+						<th>Bank of America</th>
+						<td>Owner: Zubin Talib</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Account #: xxxx-xxxx-xxxx-6265</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Rounting #: xxxx-xxxx-xxxx-4303</td>
+					</tr>
+				</table>
+
+				<table class="billingTable">
+					<tr>
+						<td>
+
+						</td>
+						<th></th>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+
+			</section>
+
+<!-- Save Changes Buttons -->
+			<section class="col-xs-12 dash-section">
+				<header>
+					<h3>Save Changes</h3>
+				</header>
+				<div class="form-btn-group">
+					<a href="#" class="btn btn-sm blue">Reset</a>
+					<a href="#" class="btn btn-sm dblue">Save</a>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<ul>
+						<li class="footer-link"><a href="../index.html">Users</a></li>
+						<li class="footer-link"><a href="../provider.html">Providers</a></li>
+						<li class="footer-link"><a href="../about.html">About</a></li>
+						<li class="footer-link"><a href="../index.html">
+							<img src="../assets/logo/izooky-target.png" class="footer-logo"/></a>
+						</li>
+						<li class="footer-link"><a href="../help.html">Help</a></li>
+						<li class="footer-link"><a href="../register/register.html">Register</a></li>
+						<li class="footer-link"><a href="../signin.html">Sign In</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

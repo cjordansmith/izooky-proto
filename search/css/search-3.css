@@ -1,0 +1,359 @@
+.no-margin {
+    margin:0;
+}
+.filter-select {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: #2980b9;
+}
+/*  --------------------
+    --------------------
+    Search bar
+    --------------------
+    --------------------  */
+#top-nav-links {
+    line-height: 50px;
+    margin: 0;
+}
+#top-nav-links ul {
+    height: 50px;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+#top-nav-links ul > li {
+    height: 50px;
+}
+#search {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: block;
+}
+#search .row {
+    margin:0;
+}
+
+header#search-header {
+    width: 100%;
+    height: 100px;
+    margin: 0 0 20px 0;
+    text-align: right;
+    background-color: #55b1ed;
+    color: #ffffff;
+    box-shadow: 2px 3px 14px -1px #c1c1c1;
+}
+form#search-bar {
+    padding:13px 10px;
+    margin:0;
+}
+
+form#search-bar input#search-input {
+    height:34px;
+}
+form#search-bar button#search-btn {
+    height:34px;
+    background: #2980b9;
+    color: #fefefe;
+}
+.search-bar-label {
+    color: #fefefe;
+}
+
+
+/*  --------------------
+    --------------------
+    Search Bar Filters
+    --------------------
+    --------------------  */
+
+header#search-header h2 {
+    font-family: 'Lato', sans-serif;
+    color: #fefefe;
+    display: block;
+    line-height: 34px;
+    padding:0;
+    margin:10px 40px;
+    font-size: 1.6em;
+    font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: -.2px;
+    text-shadow: 0px .5px .2px #2d3538;
+}
+header#search-header i {
+    margin-left:12px;
+}
+
+#search-filters {
+    background: #dde7f7;
+    height:40px;
+    color: #7a8491;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
+#search-filters-bottom {
+    background: none;
+    height:40px;
+    color: #7a8491;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
+#search-page a {
+    display: inline-block;
+}
+/*  --------------------
+    --------------------
+    Search Results
+    --------------------
+    --------------------  */
+.search-result {
+    height:200px;
+    margin: 0 10px 14px 10px;
+    border: 1px solid #dde7f7;
+    padding:0;
+}
+.provider-picture {
+    background-image: url("../assets/doctor-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    float:left;
+    margin: 0;
+}
+.provider-picture-2 {
+    background-image: url("../assets/doctor-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    float:left;
+    margin: 0;
+}
+.provider-picture-3 {
+    background-image: url("../assets/doctor-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    float:left;
+    margin: 0;
+}
+.search-result header.provider-header {
+    border-bottom: 1px solid #dde7f7;
+    height:40px;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.provider-info {
+    height: 140px;
+    padding:0;
+}
+
+.provider-name {
+    display: inline-block;
+ }
+.search-result h3 {
+    height:20px;
+    width: 50%;
+    line-height: 20px;
+    font-size: 18px;
+    display:inline-block;
+    color: #2980b9;
+    font-weight: 400;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0 0 0 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.provider-primary {
+    height: 16px;
+    width:auto;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 0 5%;
+    padding: 0;
+    min-height: none;
+}
+.provider-secondary {
+    height: 16px;
+    width:auto;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    min-height: none;
+}
+.provider-ratings {
+    height: 40px;
+    width:auto;
+    color: #fcb240;
+    font-size: 18px;
+    line-height:20px;
+    margin: 0 ;
+    padding: 0;
+    display: inline-block;
+}
+.provider-tagline {
+    height: 60px;
+}
+.provider-tagline p {
+    font-size: 14px;
+}
+
+.pageme-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    background: #fefefe;
+    color: #7a8491;
+    border: 1px solid #7a8491;
+    border-radius: 2px;
+    font-variant: normal;
+    font-family: 'Lato', sans-serif;
+}
+.dropdown-menu li {
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.dropdown-menu > li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height:24px;
+}
+.provider-main {
+    padding: 0 0 0 15px;
+    margin: 0;
+    text-align: left;
+}
+ul.provider-list {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin-bottom: 0;
+    -webkit-padding-start: 10px;
+}
+ul.provider-list > li {
+    line-height: 24px;
+    font-size: 14px;
+    display: block;
+}
+ul.provider-list > li > i {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    margin-right:10px;
+    line-height: 24px;
+}
+.provider-contact {
+    font-size: 14px;
+    line-height:42px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.provider-contact img {
+    width: 60%;
+    height: auto;
+    margin: 16% auto 10px auto;
+}
+.provider-list p {
+    font-size:12px;
+    font-weight:400;
+    margin: 8px auto 0 auto;
+    line-height:16px;
+    text-align: center;
+    width: auto;
+    display: block;
+}
+.provider-cost {
+    font-weight:300;
+    font-size: 13px;
+    text-align:center;
+    padding:0;
+    margin: 0;
+}
+.provider-rate {
+    margin:0;
+    padding: 14px 0 0 0;
+    line-height: 24px;
+}
+.provider-rate > .cost {
+    font-size: 14px;
+    font-weight:900;
+}
+
+
+/*  --------------------
+    --------------------
+    COL-NAV
+    --------------------
+    --------------------  */
+#col-nav {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    height:100%;
+}
+#col-nav header > h4 {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height:30px;
+    padding:0 2%;
+    margin:0;
+    background: #2980b9;
+    color: #fefefe;
+}
+#col-nav ul {
+    display: block;
+    width:100%;
+    list-style-type: disc;
+    -webkit-margin-before: 6px;
+    -webkit-margin-after: 6px;
+    -webkit-margin-start: 10px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 20px;
+    padding-bottom: 10px;
+}
+
+#col-nav ul > label {
+    width: 100%;
+    text-align: left;
+    line-height:20px;
+    padding: 0;
+    margin:0;
+    font-size: 14px;
+    font-weight:900;
+    font-variant: small-caps;
+}
+#col-nav ul > li {
+    width: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    height: 14px;
+    padding-left: 10px;
+}
+ul.filter-category li > input {
+    margin-right: 10px;
+    line-height: 12px;
+}
+
+
+
+
+footer .content {
+    height:auto;
+}

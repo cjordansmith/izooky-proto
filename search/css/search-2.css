@@ -1,0 +1,500 @@
+/* ==========================================================================
+==========================================================================
+DOCUMENT INFORMATION
+- Document: iZooky Main Styles
+- Version:  1.0.0
+- Client:   Zubin Talib
+- Author:   Jordan Smith
+
+COLORS
+- navy      #0d4e78
+- blue      #2980b9
+- sky       #55b1ed
+- yellow    #fcb240
+- green     #2ecc71
+
+TEXT
+- black     #3a3a3a
+- gray      #7a8491
+- lgray     #dde7f7
+
+FONTS
+- default body text         Lato, sans-serif
+- subtitle h2,h3 text       Open Sans, sans-serif
+- footer,button text        Lato, sans-serif
+- header,input text         Open Sans, sans-serif
+- default p text            Lato, sans-serif
+-                           Comfortaa, cursive
+
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Comfortaa', cursive;
+
+TEXT       SIZE    SPACING     HEIGHT      WEIGHT
+- h1    5em     1px         1.3em       500
+- h2    36px    0.5px       1.25em      100
+- h3    24px    0.7px       1.25em      600
+- h4    20px    0.5px       1.25em      400
+- p     18px    0.5px       28px        400
+- btn   22px    0           normal      400
+- nav   18px    1px         3.4em       300
+- foot  16px    1px         24px        300
+- input 18px    normal      55px        normal
+
+BUTTON
+sm
+med
+lg
+box-shadow 0 4px 0 0, padding 20px 0
+==========================================================================
+========================================================================== */
+body {
+    margin: 0;
+}
+
+html, body, #canvas {
+    width: 100%;
+    height: 100%;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size:1.6rem;
+}
+p.p1 {
+    font-size: 1.8rem;
+}
+.text-bold {
+    font-weight: 400;
+}
+.vertical-align {
+}
+
+/* ==========================================================================
+COLORS
+========================================================================== */
+.white {
+    background: #ffffff; }
+.text-white {
+    color: rgba( 255,255,255,0.87 ); }
+.gray {
+    background: #f6f8f8;
+    border-top: 1px solid #dadfe1;
+    border-bottom: 1px solid #dadfe1;
+    color: #0d4e78; }
+.text-gray {
+    color: #f6f8f8; }
+.navy {
+    background: #0d4e78;
+    color: #ffffff; }
+.text-navy {
+    color: #0d4e78; }
+.blue {
+    background: #2980b9;
+    color: #ffffff; }
+.text-blue {
+    color: #2980b9; }
+.sky {
+    background: #55b1ed;
+    color: #FFFFFF; }
+.text-sky {
+    color: #55b1ed; }
+.yellow {
+    background: #fcb240;
+    color: #ffffff; }
+.text-yellow {
+    color: #fcb240; }
+.green {
+    background: #2ecc71;
+    color: #f6f8f8; }
+.text-green {
+    color: #2ecc71; }
+.dark {
+    background: #072a41;
+    color: #FFFFFF; }
+.text-dark {
+    color: #072a41; }
+
+/* ==========================================================================
+HEADER
+========================================================================== */
+.navbar {
+    background: #0d4e78;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+}
+#navbar-main ul.nav {
+    height:auto;
+}
+#navbar-main ul.nav > li > a {
+    color: #fefefe;
+    font-size: 1.4em;
+    vertical-align: center;
+    line-height: 10px;
+    margin: 10px 8px 10px 4px;
+}
+img.brand-logo {
+    height: 40px;
+    width: auto;
+}
+#main-footer {
+    margin: 0 auto;
+    float: none;
+    padding: 0;
+}
+#user-header img, #prov-header img {
+    width: 75px;
+    height: 75px;
+}
+#prov-header {
+    background-size: cover;
+    background: src(images/doctor-video-call.png) no-repeat center center;
+    padding: 0;
+}
+#prov-header .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#prov-header h1 {
+    color: #fcb240;
+    font-weight: 700;
+}
+
+header.page-header {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+}
+header.page-header h2 {
+    padding-bottom: 8px;
+    padding-left: 0;
+    border-bottom: 2px solid #dadfe1;
+    margin-bottom: 16px;
+    width: 100%;
+}
+header.page-header ul.link-nav {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+    padding: 0;
+
+}
+header.page-header ul.link-nav > li {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1.4rem;
+}
+header.page-header ul.link-nav > li > a {
+    color: #2980b9;
+}
+
+/* ==========================================================================
+FOOTER
+========================================================================== */
+footer {
+    background: #0d4e78;
+    color: #ffffff;
+}
+#footer-main {
+    height: 40px;
+}
+#footer-main ul.nav {
+    height:auto;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+#footer-main ul.nav > li {
+    width: 20%;
+}
+#footer-main ul.nav > li > a {
+    color: #fefefe;
+    font-size: 1.4em;
+    line-height: 40px;
+    height:70px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+#footer-main ul.nav > li > a > img {
+    line-height: 40px;
+    height: 40px;
+    width: auto;
+    margin: 0 auto;
+}
+
+#footer-nav {
+    text-align: center;
+}
+/* ==========================================================================
+SECTIONS
+========================================================================== */
+section {
+    padding: 50px 0;
+}
+h2 {
+    padding-bottom: 16px;
+}
+#signup h4 {
+    margin-top:20px;
+}
+#user-signup p {
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+form#user-signup input {
+
+}
+form#user-signup input {
+    font-weight: 300;
+    padding-left: 0;
+    background: none;
+    color: #ffffff;
+    border:none;
+    border-bottom:1px solid rgba( 255,255,255,0.8 );
+}
+
+form#user-signup input::-webkit-input-placeholder {
+    color: rgba( 255,255,255,0.8 ) !important;
+}
+
+form#user-signup input:-moz-placeholder { /* Firefox 18- */
+    color: rgba( 255,255,255,0.8 ) !important;
+}
+
+form#user-signup input::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba( 255,255,255,0.8 ) !important;
+}
+
+form#user-signup input:-ms-input-placeholder {
+    color: rgba( 255,255,255,0.8 ) !important;
+}
+form#user-signup input:focus {
+    border-bottom: 2px solid rgba( 255,255,255,1 );
+}
+form#user-signup button {
+    float:right;
+    color: #ffffff;
+    background: #fcb240;
+    border-color: #fcb240;
+}
+form#user-signup a {
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 300;
+}
+form#user-signup li {
+    background: none;
+    color: #ffffff;
+}
+/* ==========================================================================
+ #answered
+========================================================================== */
+#user-header {
+
+    padding: 0;
+}
+#user-header .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#user-header h1 {
+    color: #fcb240;
+    font-weight: 700;
+}
+.filter-dark {
+    background-color: rgba( 68,76,81, 0.5 );
+    height: 100%;
+    width: 100%;
+}
+
+#connect img {
+    width:90%;
+    max-width:150px;
+    height: auto;
+    margin: 30px auto;
+    padding: 0;
+    display: block;
+}
+
+#answered span.glyphicon {
+    font-size: 3.6em;
+    display:block;
+    margin: 20px auto;
+    line-height: 110px;
+    color: #0d4e78;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid #0d4e78;
+}
+#devices img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+#expand img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+section#own h1 {
+    font-size: 6em;
+    font-weight: 900;
+    color: #2980b9;
+}
+/* ==========================================================================
+ About Page Sections
+========================================================================== */
+#company h3, #team h3, #philosophy h3 {
+    padding: 0 15px;
+    color: #55b1ed;
+}
+#company p, #team p, #philosophy p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+#company ol {
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#company span {
+    font-weight: 700;
+}
+#company ol > li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#team img {
+    display: block;
+    margin: 0 auto;
+}
+#team h4 {
+    color: #0d4e78;
+    text-align:center;
+}
+
+/* ==========================================================================
+ Help Page Sections
+========================================================================== */
+#help-start h3, #help-dash h3, #help-call h3, #help-billing h3 {
+    padding: 0 15px;
+    color: #55b1ed;
+}
+#help-start p, #help-dash p, #help-call p, #help-billing p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+
+/* ==========================================================================
+ Contact Form
+========================================================================== */
+#contact h4 {
+    margin-top:20px;
+}
+#user-contact p {
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+form#user-contact input {
+
+}
+form#user-contact input {
+    font-weight: 400;
+    padding-left: 8px;
+    background: #fefefe;
+    color: #0d4e78;
+    border:none;
+    border-bottom:1px solid rgba( 255,255,255,0.8 );
+    border-radius: 2px;
+}
+
+form#user-contact input::-webkit-input-placeholder {
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+form#user-contact input:-moz-placeholder { /* Firefox 18- */
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+form#user-contact input::-moz-placeholder {  /* Firefox 19+ */
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+form#user-contact input:-ms-input-placeholder {
+    color: #2980b9 !important;
+    font-weight:300;
+}
+form#user-contact input:focus {
+    border-bottom: 2px solid rgba( 255,255,255,1 );
+}
+form#user-contact button {
+    float:right;
+    color: #ffffff;
+    background: #fcb240;
+    border-color: #fcb240;
+}
+
+form#user-contact textarea {
+    background:#fefefe;
+    color: #0d4e78;
+    border:1px solid rgba( 255,255,255,0.8 );
+    font-size: 1.6em;
+    font-weight: 400;
+    border-radius: 2px;
+    letter-spacing: 0.02em;
+    padding-left: 6px;
+}
+form#user-contact textarea::-webkit-input-placeholder {
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+form#user-contact textarea:-moz-placeholder { /* Firefox 18- */
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+form#user-contact textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+form#user-contact textarea:-ms-input-placeholder {
+    color: #2980b9 !important;
+    font-weight:300;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+ Search Bar
+========================================================================== */
+
+.no-padding {
+    padding: 0;
+}

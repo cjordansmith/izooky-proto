@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+.open-modal-user,
+.open-modal-prov {
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: all 0.5s ease;
+  padding: 0;
+  margin: 0;
+}
+.open-modal-user img {
+  height: 130px;
+  width: 130px;
+  padding: 0;
+  margin: 0;
+}
+.open-modal:hover {} .overlay {
+                       display: none;
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       right: 0;
+                       bottom: 0;
+                       align-items: center;
+                       justify-content: center;
+                       width: 100%;
+                       text-align: center;
+                       background-color: rgba(0, 0, 0, 0.5);
+                     }
+.overlay[aria-hidden="false"] {
+  display: flex;
+}
+.modal {
+  position: relative;
+}
+.modal-content {
+  position: relative;
+  padding: 60px;
+  background-color: #000;
+  color: #fff;
+  min-width: 600px;
+  min-height: 250px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(0.6);
+  transition: transform .3s;
+}
+.overlay[aria-hidden="false"] .modal-content {
+  transform: scale(1);
+}
+/*
+  Close Modal Button
+*/
+
+.btn-close {
+  display: block;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  right: .25em;
+  top: .25em;
+  z-index: 100;
+}
+.btn-close:hover {
+  color: #c12f48;
+}
+.btn-close:focus {
+  outline: 1px dotted;
+}

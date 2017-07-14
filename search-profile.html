@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search | Profile</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" type="image/png" href="assets/icons/iZooky-ico.ico"/>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/dash.css" />
+  <link rel="stylesheet" href="css/call.css" />
+  <link rel="stylesheet" href="css/search.css" />
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <nav class="topbar slab-dblue">
+    <div class="row">
+      <div class="col-sm-2 topbar-logo">
+        <a href="index.html">
+          <img src="assets/logo/izooky-logo-white.png" alt="izooky-logo" />
+        </a>
+      </div>
+      <div class="col-sm-5 topbar-nav">
+        <ul class="top-link">
+          <li><a href="index.html">Users</a></li>
+          <li><a href="provider.html">Providers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-2 topbar-signin">
+        <ul class="top-link signin">
+          <li><a href="udash-profile.html" class="text-white"><i class="fa fa-cog"></i></a></li>
+          <li><a href="index.html">Sign Out</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- END TOPBAR -->
+
+  <!-- NAV DASH-NAV -->
+  <div id="dash-nav" class="provider-nav">
+    <div class="row">
+
+      <div class="col-md-5">
+        <ul class="dash-link-welcome">
+          <li>Welcome, Zubin</li>
+          <li class="header-account-type">User Account
+            <a href="pdash-summary.html" class="header-account-change">(Change)</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 col-md-offset-3" >
+        <ul class="dash-nav-links">
+          <li><a href="udash-summary.html">Overview</a></li>
+          <li class="dash-current"><a href="search/search.html">Search</a></li>
+          <li><a href="call/user-call.html">Make a Call</a></li>
+          <!--<li><a href="udash-summary.html">Address Book</a></li>-->
+        </ul>
+      </div>
+
+    </div>
+  </div><!-- END DASH-NAV -->
+
+  <!-- DASH-MAIN -->
+  <div class="row" id="main-profile">
+
+    <!-- DASH-BODY -->
+    <div class="col-md-12" id="profile-body">
+
+      <!-- SEARCH-MAIN-HEADER -->
+      <div class="row search-profile-header" id="search-nav">
+        <div class="col-md-6" >
+          <a href="search/search.html">&lt; Back to results</a>
+        </div>
+        <div class="col-md-6 text-right" >
+          <a href="search-profile.html">Next result (Dr. Thomas Brown) &gt;</a>
+        </div>
+      </div>
+
+      <!-- DASH-INNER -->
+      <div class="row profile-inner">
+
+        <!-- PROFILE HEADER -->
+        <div class="col-md-12 profile-header-section pp">
+
+          <!-- PROFILE LEFT-->
+          <div class="col-md-3 profile-header-side" id="profile-avatar">
+            <div id="profile-call-buttons">
+              <a href="#"><img src="assets/icons/profile-call-btn-green-border.png" alt="call"  /></a>
+              <a href="#"><img src="assets/icons/profile-chat-btn-blue-border.png" alt="chat"  /></a>
+              <a href="#"><img src="assets/icons/profile-apt-btn-sky-border.png" alt="Schedule appointment"  /></a>
+              <a href="#"><img src="assets/icons/profile-message-btn-sky-border.png" alt="send message"  /></a>
+            </div>
+          </div>
+          <!-- END PROFILE LEFT -->
+
+          <!-- PROFILE CENTER -->
+          <div class="col-md-7 profile-header-center">
+            <header class="results-title">
+              <h3>Dr. Jetson Lee, MD</h3>
+              <h4><strong>Family Practice</strong> - Pediatrics</h4>
+            </header>
+            <table id="profile-info" class="profile-info">
+              <tr>
+                <th>School</th>
+                <td>University of Kansas Medical School</td>
+              </tr>
+              <tr>
+                <th>Experience</th>
+                <td>24 years</td>
+              </tr>
+              <tr>
+                <th>Language</th>
+                <td>English, Korean</td>
+              </tr>
+              <tr>
+                <th>Employer</th>
+                <td>Leawood Family Practice</td>
+              </tr>
+              <tr>
+                <th>Tags</th>
+                <td id="profile-tags">
+                  <a class="btn btn-tags" href="#" role="button">Doctor</a>
+                  <a class="btn btn-tags" href="#" role="button">Pediatrics</a>
+                  <a class="btn btn-tags" href="#" role="button">Family</a>
+                  <a class="btn btn-tags" href="#" role="button">Practice</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Rating</th>
+                <td class="results-rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i> <span class="ratings-text">(34)</span>
+                </td>
+              </tr>
+              <tr>
+                <th>Tagline</th>
+                <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</td>
+              </tr>
+            </table>
+
+          </div><!-- END PROFILE CENTER -->
+
+          <!-- PROFILE RIGHT -->
+          <div class="col-md-2 profile-header-side" >
+            <div class="provider-rates">
+              <h3>Rates</h3>
+              <p>
+                $2.50&nbsp;&nbsp;|&nbsp;&nbsp;minute
+              </p>
+              <p>
+                $65.00&nbsp;&nbsp;|&nbsp;&nbsp;half hour
+              </p>
+              <p>
+                $100.00&nbsp;&nbsp;|&nbsp;&nbsp;hour
+              </p>
+            </div>
+          </div>
+          <!-- END PROFILE RIGHT -->
+
+        </div><!-- END PROFILE-SECTION -->
+      </div><!-- END PROFILE-INNER -->
+
+      <div class="row profile-inner">
+
+        <!-- PROFILE-TABS -->
+        <div class="profile-section">
+          <!-- TABS -->
+          <div id="tab-section">
+
+            <ul class="nav nav-tabs">
+              <li class="active profile-tabs">
+                <a href="#education">
+                  <i class="fa fa-graduation-cap"></i> Education
+                </a>
+              </li>
+              <li class="profile-tabs">
+                <a href="#license">
+                  <i class="fa fa-certificate"></i> License
+                </a>
+              </li>
+              <li class="profile-tabs">
+                <a href="#awards">
+                  <i class="fa fa-trophy"></i> Awards
+                </a>
+              </li>
+              <li class="profile-tabs">
+                <a href="#employer">
+                  <i class="fa fa-building-o"></i> Employer
+                </a>
+              </li>
+              <li class="profile-tabs">
+                <a href="#social">
+                  <i class="fa fa-comments-o"></i> Social
+                </a>
+              </li>
+            </ul>
+
+            <div class="tabs-inner">
+              <div class="tab-content">
+                <div id="education" class="tab-pane fade in active">
+                  <table class="table table-tab">
+                    <tr>
+                      <th>School</th>
+                      <td>University of Kansas Medical School</td>
+                      <th>School</th>
+                      <td>Johns Hopkins University</td>
+                    </tr>
+                    <tr>
+                      <th>Degree</th>
+                      <td>Bachelors of Medicine</td>
+                      <th>Degree</th>
+                      <td>Masters of Medicine</td>
+                    </tr>
+                    <tr>
+                      <th>Class</th>
+                      <td>1988</td>
+                      <th>Class</th>
+                      <td>1990</td>
+                    </tr>
+                    <tr>
+                      <th>Major</th>
+                      <td>General Medicine</td>
+                      <th>Major</th>
+                      <td>Surgury</td>
+                    </tr>
+                    <tr>
+                      <th>Focus</th>
+                      <td>Pediatrics</td>
+                      <th>Focus</th>
+                      <td>Pediatrics</td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="license" class="tab-pane fade">
+                  <table class="table table-tab">
+                    <tr>
+                      <th>License</th>
+                      <td>Department of Health</td>
+                    </tr>
+                    <tr>
+                      <th>License #</th>
+                      <td>254458744589</td>
+                    </tr>
+                    <tr>
+                      <th>Issued</th>
+                      <td>July 01, 1992</td>
+                    </tr>
+                    <tr>
+                      <th>Renewed</th>
+                      <td>July 01, 2015</td>
+                    </tr>
+                    <tr>
+                      <th>Expires</th>
+                      <td>July 01, 2018</td>
+                    </tr>
+                    <tr>
+                      <th>Region(s)</th>
+                      <td>Missouri, Kansas</td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="awards" class="tab-pane fade">
+                  <table class="table table-tab">
+                    <tr>
+                      <th>Recognition</th>
+                      <td>Florey Medal</td>
+                    </tr>
+                    <tr>
+                      <th>Awarded</th>
+                      <td>May 2013</td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="employer" class="tab-pane fade">
+                  <table class="table table-tab">
+                    <tr>
+                      <th>Company</th>
+                      <td>Leawood Family Clinic</td>
+                      <th>Category</th>
+                      <td>Family Practice</td>
+                    </tr>
+                    <tr>
+                      <th>Street</th>
+                      <td>11221 S Main St</td>
+                      <th>State</th>
+                      <td>Kansas</td>
+                    </tr>
+                    <tr>
+                      <th>Suite</th>
+                      <td>212</td>
+                      <th>Zip</th>
+                      <td>66212</td>
+                    </tr>
+                    <tr>
+                      <th>City</th>
+                      <td>Overland Park</td>
+                      <th>Country</th>
+                      <td>United States</td>
+                    </tr>
+                    <tr>
+                      <th>Work Phone</th>
+                      <td>913.555.6768</td>
+                      <th>Work Email</th>
+                      <td>jlee@work.com</td>
+                    </tr>
+                    <tr>
+                      <th>Cell Phone</th>
+                      <td>913.555.9835</td>
+                      <th>Alt Email</th>
+                      <td></td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="social" class="tab-pane fade">
+                  <table class="table table-tab">
+                    <tr>
+                      <th><i class="fa fa-facebook">&nbsp;&nbsp;</i>Facebook</th>
+                      <td>Leawood Family Clinic</td>
+                      <th><i class="fa fa-twitter">&nbsp;&nbsp;</i>Twitter</th>
+                      <td>@leawood_family</td>
+                    </tr>
+                    <tr>
+                      <th><i class="fa fa-facebook">&nbsp;&nbsp;</i>LinkedIn</th>
+                      <td>@leawood_family</td>
+                      <th><i class="fa fa-facebook">&nbsp;&nbsp;</i>Google+</th>
+                      <td>leawood_family_clinic</td>
+
+                    </tr>
+                    <tr>
+                      <th><i class="fa fa-laptop">&nbsp;&nbsp;</i>Website</th>
+                      <td>www.leawoodfamily.com</td>
+                    </tr>
+                  </table>
+                </div>
+              </div><!-- END TAB-CONTENT -->
+            </div>
+
+          </div><!-- END TAB-SECTION -->
+
+        </div><!-- END PROFILE-SECTION -->
+      </div><!-- END PROFILE-INNER -->
+
+      <div class="row profile-inner profile-inner-last" id="reviews-1">
+        <!-- PROFILE-TABS -->
+        <div class="row profile-section">
+          <!-- TABS -->
+          <div class="col-md-12" id="tab-section2">
+
+            <ul class="nav nav-tabs">
+              <li class="active profile-tabs">
+                <a href="#reviews">
+                  <i class="fa fa-user-md"></i> Client Reviews
+                </a>
+              </li>
+              <li class="profile-tabs">
+                <a href="#ratings">
+                  <i class="fa fa-users"></i> Peer Ratings
+                </a>
+              </li>
+            </ul>
+
+            <div class="tabs-inner">
+              <div class="tab-content">
+
+                <div id="reviews" class="row tab-pane fade in active">
+
+                  <div class="row client-review-container">
+
+                    <div class="col-md-2 user-avatar-1">
+                      <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                    </div>
+                    <div class="col-md-10 comment-bg">
+                      <a href="/">Caleb Phillippi</a>&nbsp;&nbsp;Account Manager at <a href="/">Kansys Staffing Group</a>
+                      <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="comment-box">
+                        <p>
+                          Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus. Donec et lectus et sem rutrum sodales. Morbi cursus. Aliquam a odio. Sed tortor velit, convallis eget, porta interdum, convallis sed, tortor. Phasellus ac libero a lorem auctor mattis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                      </div>
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-2.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group form-comment">
+                        <input type="text" class="form-control" id="comment" placeholder="Add a comment..."/>
+                        <a href="//" class="btn btn-xs btn-comment">Submit</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row client-review-container">
+
+                    <div class="col-md-2 user-avatar-1">
+                      <img src="assets/img/user-avatar-3.jpg" alt="avatar" />
+                    </div>
+                    <div class="col-md-10 comment-bg">
+                      <a href="/">Charles Barkley</a>&nbsp;&nbsp;Power Forward at <a href="/">Phoenix Suns</a>
+                      <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="comment-box">
+                        <p>
+                          Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus. Donec et lectus et sem rutrum sodales. Morbi cursus. Aliquam a odio. Sed tortor velit, convallis eget, porta interdum, convallis sed, tortor. Phasellus ac libero a lorem auctor mattis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                      </div>
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-4.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-5.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-3.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group form-comment">
+                        <input type="text" class="form-control"  placeholder="Add a comment..."/>
+                        <a href="//" class="btn btn-xs btn-comment">Submit</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="ratings" class="row tab-pane fade">
+
+                  <div class="row client-review-container">
+
+                    <div class="col-md-2 user-avatar-1">
+                      <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                    </div>
+                    <div class="col-md-10 comment-bg">
+                      <a href="/">Caleb Phillippi</a>&nbsp;&nbsp;Account Manager at <a href="/">Kansys Staffing Group</a>
+                      <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="comment-box">
+                        <p>
+                          Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus. Donec et lectus et sem rutrum sodales. Morbi cursus. Aliquam a odio. Sed tortor velit, convallis eget, porta interdum, convallis sed, tortor. Phasellus ac libero a lorem auctor mattis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                      </div>
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-2.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group form-comment">
+                        <input type="text" class="form-control"  placeholder="Add a comment..."/>
+                        <a href="//" class="btn btn-xs btn-comment">Submit</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row client-review-container">
+
+                    <div class="col-md-2 user-avatar-1">
+                      <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                    </div>
+                    <div class="col-md-10 comment-bg">
+                      <a href="/">Caleb Phillippi</a>&nbsp;&nbsp;Account Manager at <a href="/">Kansys Staffing Group</a>
+                      <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="comment-box">
+                        <p>
+                          Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi. Duis tincidunt, felis et luctus placerat, ipsum libero vestibulum sem, vitae elementum wisi ipsum a metus. Nulla a enim sed dui hendrerit lobortis. Donec lacinia vulputate magna. Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus. Donec et lectus et sem rutrum sodales. Morbi cursus. Aliquam a odio. Sed tortor velit, convallis eget, porta interdum, convallis sed, tortor. Phasellus ac libero a lorem auctor mattis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        </p>
+                      </div>
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-2.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Aliquam et nisl vel ligula consectetuer suscipit. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium. Nulla facilisi.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+                      <br />
+                      <div class="comments-container">
+                        <img src="assets/img/user-avatar-1.jpg" alt="avatar" />
+                        <div class="comment-text">
+                          <p>
+                            Vivamus suscipit lectus at quam. In lectus est, viverra a, ultricies ut, pulvinar vitae, tellus.
+                          </p>
+                          <a href="/">Like</a> - <a href="/">Reply</a> - <a href="/">Share</a>
+                        </div>
+                      </div>
+
+                      <div class="form-group form-comment">
+                        <input type="text" class="form-control" placeholder="Add a comment..."/>
+                        <a href="//" class="btn btn-xs btn-comment">Submit</a>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div><!-- END TAB-CONTENT -->
+            </div><!-- END TABS-INNER -->
+
+          </div><!-- END TAB-SECTION -->
+
+        </div><!-- END PROFILE-SECTION -->
+      </div><!-- END PROFILE INNER -->
+
+    </div><!-- END PROFILE-BODY -->
+  </div><!-- END MAIN -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="row">
+          <div class="small-8 small-offset-2 columns text-center">
+            <ul>
+              <li class="footer-link"><a href="index.html">Users</a></li>
+              <li class="footer-link"><a href="provider.html">Providers</a></li>
+              <li class="footer-link"><a href="about.html">About</a></li>
+              <li class="footer-link"><a href="index.html">
+                <img src="assets/logo/izooky-target.png" class="footer-logo"/></a>
+              </li>
+              <li class="footer-link"><a href="help.html">Help</a></li>
+              <li class="footer-link"><a href="register.html">Register</a></li>
+              <li class="footer-link"><a href="signin.html">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- END FOOTER -->
+
+  <script>
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+  });
+  </script>
+
+</body>
+</html>

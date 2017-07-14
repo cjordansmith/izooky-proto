@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iZooky | Call Screen</title>
+    <link rel="icon" src="/assets/icons/target-favicon.ico" />
+
+    <!--CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/foundation-flex.css" />
+    <link rel="stylesheet" href="assets/css/call.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <div id="call-int" class="row expanded align-center">
+        <main id="section-left" class="column small-8 align-stretch">
+            <div id="video" class="row sections">
+                <header id="video-header" class="row provider-video-header">
+                    <div class="small-1 column align-middle text-center">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="small-3 column align-middle">
+                        <h3 class="text-left">Dr Joe Brown</h3>
+                        <h4 class="text-left">00:21:17</h4>
+                    </div>
+                    <div class="small-4 small-offset-2 column align-middle text-center onoffswitch">
+                        <span class="billing-label">Billing Timer</span>
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                        </label>
+                    </div>
+                    <div class="small-2 column align-middle">
+                        <h3 class="text-right">Invoice Total</h3>
+                        <h4 class="text-right">$10.50</h4>
+                    </div>
+                </header>
+
+                <div id="video-section" class="row">
+                    <div id="video-screen">
+                        <div class="md-modal md-effect-13" id="modal-13">
+                            <div class="md-content">
+                                <!-- VIDEO BOX -->
+                                <div id="vid-box">
+                                    <div id="controls" class="row">
+                                        <div class="small-3 columns text-center">
+                                            <a href="#" class="video-control-btn"><img src="assets/icons/fa-signal-bars.png" alt="signal"></a>
+                                        </div>
+                                        <div class="small-6 columns text-center">
+                                            <img src="assets/icons/fa-video.png" alt="video">
+                                            <img src="assets/icons/fa-audio.png" alt="audio">
+                                            <img src="assets/icons/fa-sharescreen-2.png" alt="signal">
+                                            <img src="assets/icons/fa-fullscreen.png" alt="signal">
+                                            <img src="assets/icons/fa-hangup-r.png" alt="hangup">
+                                        </div>
+                                        <div class="small-3 columns text-center">
+                                            <img src="assets/icons/fa-volume-down.png" alt="volume">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- END MD-CONTENT -->
+                        </div>
+                        <!-- END MD-MODAL-->
+
+
+                    </div>
+                    <!-- END VIDEO-SCREEN -->
+                </div>
+                <!-- END VIDEO SECTION -->
+            </div>
+
+            <div id="bar" class="row sections align-middle">
+                <div class="small-4 column text-center">
+                    <!--<div class="bar-caller-btn" >
+                        <img src="assets/icons/fa-audio.png" alt="audio" id="bar-volume">
+                        <img src="assets/icons/fa-sharescreen-2.png" alt="signal" id="bar-chat">
+                    </div>-->
+                    <img src="./assets/img/user1.jpg" alt="caller-1">
+                </div>
+                <div class="small-4 column text-center">
+                    <img src="./assets/img/user2.jpg" alt="caller-2">
+                </div>
+                <div class="small-4 column text-center">
+                    <img src="./assets/img/user3.jpg" alt="caller-3">
+                    <a href="#">
+                        <p>Invite User</p>
+                        <i class="fa fa-plus-square"></i>
+                    </a>
+                </div>
+
+                <!--<button class="cbutton cbutton-effect-radomir md-trigger" value="Call" hidden="true" data-modal="modal-13" id="showModal"></button>-->
+            </div>
+        </main>
+        <!-- END SECTION LEFT -->
+
+
+        <div id="section-right" class="column small-4 align-stretch">
+            <div id="tabs" class="row expanded sections">
+                <header id="tabs-header" class="row provider-video-header">
+                    <ul class='tab' id="tab">
+                        <li><a href='#tab1'>Details</a></li>
+                        <li><a href='#tab2'>Chat</a></li>
+                        <li><a href='#tab3'>Shared</a></li>
+                        <li><a href='#tab4'>Demo</a></li>
+                    </ul>
+                </header>
+                <div class="tab-content" data-tabs-content="example-tabs">
+                    <div id='tab1' class="row expanded">
+
+                        <div class="small-12 column collapse" id="call-details">
+                            <section class="row expanded call-details-section">
+                                <h5>Billed User</h5>
+                                <p>Zubin Talib<span class="username">zubintalib4</span></p><br />
+
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Location</h5>
+                                <p>18155 Main St</p>
+                                <p>Kansas City, MO 64112</p>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Personal Information</h5>
+                                <p>03/16/1974</p><br />
+                                <p>Facebook</p>
+                                <p>Twitter</p>
+                                <p>Linked</p>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Billing Rate</h5>
+                                <p>$2.00 per minute
+                                    <br>($3.50 per minute)
+                                    <br>($100.00 per hour)
+                                </p>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Available Documents</h5>
+                                <p>Insurance Form
+                                    <br>Billing Form
+                                </p>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Other Users</h5>
+                                <p>Talyn Good<span class="username">tGood3334</span></p>
+                                <p>John Brown <span class="username">mikey0809</span></p>
+                            </section>
+                        </div>
+
+                    </div>
+
+                    <div id='tab2' class="row expanded">
+                        <div class="small-12 column" id="chat-body">
+                            <div class="row chat-example-user">
+                                <div class="small-12 column chat-example text-right" id="user-chat3">
+                                    <p>Hello there!</p>
+                                </div>
+                            </div>
+                            <div class="row chat-example-other">
+                                <div class="small-12 column chat-example" id="prov-chat1">
+                                    <img src="assets/img/Talyn-av.jpg" alt="user-av" class="user-av">
+                                    <p>Good afternoon, how was your week?</p>
+                                </div>
+                            </div>
+                            <div class="row chat-example-user">
+                                <div class="small-12 column chat-example text-right" id="user-chat3">
+                                    <p>It was great. I filled out the medical form you requested.</p>
+                                </div>
+                            </div>
+                            <div class="row chat-example-other">
+                                <div class="small-12 column chat-example" id="prov-chat2">
+                                    <div class="no-av">JS</div>
+                                    <p class="prov-chat-text">Can you please upload it to the documents section?</p>
+                                </div>
+                            </div>
+                            <div class="row chat-example-other">
+                                <div class="small-12 column chat-example" id="prov-chat2">
+                                    <img src="assets/img/Talyn-av.jpg" alt="user-av" class="user-av">
+                                    <p class="prov-chat-text">Can you please upload it to the documents section?</p>
+                                </div>
+                            </div>
+                            <div class="row chat-example-other">
+                                <div class="small-12 column chat-example" id="prov-chat3">
+                                    <div class="no-av">JS</div>
+                                    <p class="prov-chat-text">Can you please upload it to the documents section?</p>
+                                </div>
+                            </div>
+                            <div class="row chat-example-user">
+                                <div class="small-12 column chat-example  text-right" id="user-chat3">
+                                    <p>Sure. Can you tell me how to do that?</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row align-middle" id="chat-tabs">
+                            <div class="small-4 column">
+                                <p>All</p>
+                            </div>
+                            <div class="small-4 column">
+                                <p>Zubin</p>
+                            </div>
+                            <div class="small-4 column">
+                                <p>Talyn</p>
+                            </div>
+                        </div>
+                        <div class="row" id="chat-conv">
+                            <input type="button" name="chat-enter" id="chat-submit" value="Send" />
+                            <input type="text" name="chat" id="user-chat-text" placeholder="Type Message..." />
+                        </div>
+                    </div>
+
+                    <div id='tab3' class='row'>
+                        <div class="small-12 column collapse" id="share">
+                            <section class="row expanded call-details-section">
+                                <h5>Documents</h5>
+                                <a href="/"><i class="fa fa-file-pdf-o pdf"></i>
+                                    <p>sales-graph.pdf</p><br/>
+                                    <i class="fa fa-file-word-o doc"></i>
+                                    <p>sales-graph.docx</p><br/>
+                                    <i class="fa fa-file-word-o doc"></i>
+                                    <p>sales-graph.doc</p><br/>
+                                    <i class="fa fa-file-excel-o xls"></i>
+                                        <p>sales-graph.xls</p><br/></a>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Photos</h5>
+                                <a href="/"><i class="fa fa-file-image-o img"></i>
+                                    <p>office.png</p><br/>
+                                    <i class="fa fa-file-image-o img"></i>
+                                        <p>sales-group.jpg</p><br/></a>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Vidoes</h5>
+                                <a href="/"><i class="fa fa-file-video-o img"></i>
+                                        <p>training.mp4</p><br/></a>
+                            </section>
+                            <section class="row expanded call-details-section">
+                                <h5>Links</h5>
+                                <a href="/"><i class="fa fa-link link"></i>
+                                    <p>http://fortawesome.github.io/Font-Awesome/icon/link/</p><br/>
+                                    <i class="fa fa-link link"></i>
+                                        <p>http://fortawesome.github.io/Font-Awesome/icon/link/</p><br/></a>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div id="tab4" class="row login-row">
+                        <h5>Give iZooky a Try</h5>
+                        <div class='small-12 column login-input-temp'>
+                            <form name="loginForm" id="login" action="#" onsubmit="return errWrap(login,this);">
+                                <span class="input input--nao">
+                                        <input class="input__field input__field--nao" type="text" name="username" id="username" placeholder="Enter Your Name"/>
+                                        <label class="input__label input__label--nao" for="username">
+                                            <span class="input__label-content input__label-content--nao"></span>
+                                </label>
+                                <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0" />
+                                </svg>
+                                </span>
+                                <button class="cbutton cbutton--effect-radomir text-center" type="submit" name="login_submit" value="Log In">
+                                    <i class="cbutton__icon fa fa-sign-in"></i>
+                                </button>
+                            </form>
+
+                            <form name="callForm" id="call" action="#" onsubmit="return errWrap(makeCall,this);">
+                                <span class="input input--nao ">
+                                        <input class="input__field input__field--nao" type="text" name="number" id="call" placeholder="Enter Provider's Name"/>
+                                        <label class="input__label input__label--nao" for="number">
+                                            <span class="input__label-content input__label-content--nao"></span>
+                                </label>
+                                <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0" />
+                                </svg>
+                                </span>
+                                <button class="cbutton cbutton--effect-radomir md-trigger text-center" type="submit" value="Call" data-modal="modal-13">
+                                    <i class="cbutton__icon fa fa-fw fa fa fa-phone-square"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/foundation.core.js"></script>
+    <script src="assets/js/pubnub.min.js"></script>
+    <script src="assets/js/webrtc.js"></script>
+    <script type="text/javascript">
+        var video_out = document.getElementById("vid-box");
+        var video_in = document.getElementById("vid-box-in");
+
+        function login(form) {
+            var phone = window.phone = PHONE({
+                number: form.username.value || "Anonymous", // listen on username line else Anonymous
+                publish_key: 'pub-c-c6a5ec84-debb-4a4b-a4d7-e4db5f947dc4',
+                subscribe_key: 'sub-c-68e3fffe-2bde-11e5-9cac-0619f8945a4f',
+            });
+            phone.ready(function () {
+                form.username.style.background = "#55ff5b";
+                form.login_submit.hidden = "true";
+            });
+            phone.receive(function (session) {
+                session.connected(function (session) {
+                    video_out.appendChild(session.video);
+                    showModal();
+                });
+                session.ended(function (session) {
+                    video_out.innerHTML = '';
+                });
+            });
+            return false;
+        }
+
+        function makeCall(form) {
+            if (!window.phone) alert("Login First!");
+            else phone.dial(form.number.value);
+            return false;
+        }
+
+        function showModal() {
+            $("#showModal").click();
+        }
+
+
+        function errWrap(fxn, form) {
+            try {
+                return fxn(form);
+            } catch (err) {
+                alert("WebRTC is currently only supported by Chrome, Opera, and Firefox");
+                return false;
+            }
+        }
+    </script>
+
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/modalEffects.js"></script>
+</body>
+
+</html>

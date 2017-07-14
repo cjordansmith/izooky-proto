@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search | Results</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" type="image/png" href="assets/icons/iZooky-ico.ico"/>
+
+  <!-- VARELA ROUND -->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+  <!-- LATO -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic,700italic" rel="stylesheet" type="text/css">
+  <!-- FONT AWESOME 4.6.1 -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- OPEN SANS -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+  <!-- NAV TOPBAR -->
+  <nav class="topbar slab-dblue">
+    <div class="row">
+      <div class="col-xs-3 topbar-logo">
+        <a href="index.html">
+          <img src="assets/logo/izooky-logo-white.png" alt="izooky-logo" />
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-6 topbar-nav text-center">
+        <ul class="top-link home-nav">
+          <li><a href="index.html">Users</a></li>
+          <li><a href="provider.html">Providers</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-3 col-sm-3 col-md-3 topbar-signin">
+        <ul class="top-link signin">
+          <li class="text-right signin-li"><a href="udash-summary.html" class="text-white signin-reg">Dashboard</a></li>
+          <li class="text-right signin-li"><a href="index.html" class="signin-reg">Sign Out</a></li>
+          <li class="text-right signin-icon-li"><a href="udash-summary.html" class="text-white signin-icon-a"><i class="fa fa-dashboard signin-icon"></i></a></li>
+          <li class="text-right signin-icon-li"><a href="index.html" class="signin-icon-a"><i class="fa fa-sign-out signin-icon"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- SEARCH BAR HEADER -->
+  <header id="search-header">
+    <div class="row">
+      <div class="col-sm-4 no-padding">
+        <h2>
+          Search <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+        </h2>
+      </div>
+      <div class="col-sm-8 no-padding">
+        <form id="search-bar">
+          <div class="input-group">
+            <input type="text" class="form-control" id="search-input" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn" id="search-btn" type="button">Go!</button>
+            </span>
+          </div><!-- /input-group -->
+        </form>
+      </div>
+
+    </div>
+    <div class="row">
+      <div id="search-filters">
+        <div class="col-sm-3" id="search-views">
+          views: <span class="filter-select">medium</span> large
+        </div>
+        <div class="col-sm-2" id="search-items">
+          show: <span class="filter-select">60 items</span>
+        </div>
+        <div class="col-sm-3" id="search-sort">
+          sort by: <span class="filter-select">relevance</span>
+        </div>
+        <div class="col-sm-4" id="search-page">
+          <span class="filter-select">1 - 60</span> of 120 &nbsp;&nbsp; | <a href="/"><span class="filter-select"><</span></a> page 1 of 10 <a href="/"><span class="filter-select">></span></a>
+        </div>
+      </div>
+    </div>
+  </header><!-- END SEARCH BAR HEADER -->
+
+  <!-- SEARCH RESULT PROVIDER 1 -->
+  <div class="search-result">
+    <div class="row">
+
+      <!-- PROVIDER PICTURE -->
+      <div class="col-sm-2 provider-picture"></div>
+
+      <!-- PROVIDER INFORMATION -->
+      <div class="col-sm-8 no-padding no-margin">
+        <div class="row">
+          <div class="col-sm-8 provider-info provider-main">
+            <header class="provider-header" >
+              <h3>Dr. Jetson Lee, MD</h3>
+              <span class="provider-primary">Family Practice &nbsp;</span>
+              <span class="provider-secondary">-&nbsp; Pediatrics</span>
+            </header>
+            <ul class="provider-list">
+              <li><i class="fa fa-graduation-cap"></i> 1989, University of Kansas Medical School</li>
+              <li><i class="fa fa-trophy"></i> 24 years of experience</li>
+              <li><i class="fa fa-certificate"></i> Licensed in Kansas, Missouri</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 provider-cost">
+            <header class="provider-header">
+              <div class="provider-ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </header>
+            <div class="provider-rate">
+              <span class="cost">$65.00</span> for 30 minutes or
+              <br /><span class="cost">$2.50</span> per minute
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 provider-tagline">
+            <p>This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo!</p>
+          </div>
+        </div><!-- END ROW -->
+      </div>
+      <!-- END PROVIDER INFORMATION -->
+
+      <!-- PROVIDER RATE -->
+      <div class="col-sm-2 provider-contact">
+        <a href="/">
+          <img src="assets/img/call-provider.png" alt="call provider">
+        </a>
+        <div class="btn-group">
+          <button class="btn pageme-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Page Me <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Leave Message</a></li>
+            <li><a href="#">Schedule Appt</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END PROVIDER RATE -->
+
+    </div>
+  </div>
+
+  <!-- SEARCH RESULT PROVIDER 2 -->
+  <div class="search-result">
+    <div class="row">
+
+      <!-- PROVIDER PICTURE -->
+      <div class="col-sm-2 provider-picture-2"></div>
+
+      <!-- PROVIDER INFORMATION -->
+      <div class="col-sm-8 no-padding no-margin">
+        <div class="row">
+          <div class="col-sm-8 provider-info provider-main">
+            <header class="provider-header" >
+              <h3>Dr. Darryl Appleton, MD</h3>
+              <span class="provider-primary">Physician &nbsp;</span>
+              <span class="provider-secondary">-&nbsp; Sleep Disorders</span>
+            </header>
+            <ul class="provider-list">
+              <li><i class="fa fa-graduation-cap"></i> 1989, University of Kansas Medical School</li>
+              <li><i class="fa fa-trophy"></i> 24 years of experience</li>
+              <li><i class="fa fa-certificate"></i> Licensed in Kansas, Missouri</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 provider-cost">
+            <header class="provider-header">
+              <div class="provider-ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </header>
+            <div class="provider-rate">
+              <span class="cost">$65.00</span> for 30 minutes or
+              <br /><span class="cost">$2.50</span> per minute
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 provider-tagline">
+            <p>This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo!</p>
+          </div>
+        </div><!-- END ROW -->
+      </div>
+      <!-- END PROVIDER INFORMATION -->
+
+
+      <!-- PROVIDER RATE -->
+      <div class="col-sm-2 provider-contact">
+        <a href="/">
+          <img src="assets/img/call-provider.png" alt="call provider">
+        </a>
+        <div class="btn-group">
+          <button class="btn pageme-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Page Me <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Leave Message</a></li>
+            <li><a href="#">Schedule Appt</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END PROVIDER RATE -->
+
+    </div>
+  </div>
+
+  <!-- SEARCH RESULT PROVIDER 3 -->
+  <div class="search-result">
+    <div class="row">
+
+      <!-- PROVIDER PICTURE -->
+      <div class="col-sm-2 provider-picture-3"></div>
+
+      <!-- PROVIDER INFORMATION -->
+      <div class="col-sm-8 no-padding no-margin">
+        <div class="row">
+          <div class="col-sm-8 provider-info provider-main">
+            <header class="provider-header" >
+              <h3>Dr. Teddi Bachawaty, MD</h3>
+              <span class="provider-primary">Obstetrics &nbsp;</span>
+              <span class="provider-secondary">-&nbsp; Gynecology</span>
+            </header>
+            <ul class="provider-list">
+              <li><i class="fa fa-graduation-cap"></i> 1989, University of Kansas Medical School</li>
+              <li><i class="fa fa-trophy"></i> 24 years of experience</li>
+              <li><i class="fa fa-certificate"></i> Licensed in Kansas, Missouri</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 provider-cost">
+            <header class="provider-header">
+              <div class="provider-ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </header>
+            <div class="provider-rate">
+              <span class="cost">$65.00</span> for 30 minutes or
+              <br /><span class="cost">$2.50</span> per minute
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 provider-tagline">
+            <p>This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo! This is exactly 150 characters yo!</p>
+          </div>
+        </div><!-- END ROW -->
+      </div>
+      <!-- END PROVIDER INFORMATION -->
+
+
+      <!-- PROVIDER RATE -->
+      <div class="col-sm-2 provider-contact">
+        <a href="/">
+          <img src="assets/img/call-provider.png" alt="call provider">
+        </a>
+        <div class="btn-group">
+          <button class="btn pageme-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Page Me <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Leave Message</a></li>
+            <li><a href="#">Schedule Appt</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END PROVIDER RATE -->
+
+    </div>
+  </div>
+
+<!-- PAGE NAVIGATION BOTTOM -->
+  <div class="row">
+    <div id="search-filters-bottom">
+      <div class="col-sm-12" id="search-page">
+        <span class="filter-select">1 - 60</span> of 120 &nbsp;&nbsp; |
+        <a href="/">
+          <span class="filter-select"><</span>
+        </a> page 1 of 10
+        <a href="/">
+          <span class="filter-select">></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <ul>
+            <li class="footer-link"><a href="index.html">Users</a></li>
+            <li class="footer-link"><a href="provider.html">Providers</a></li>
+            <li class="footer-link"><a href="about.html">About</a></li>
+            <li class="footer-link"><a href="index.html">
+              <img src="assets/logo/izooky-target.png" class="footer-logo"/></a>
+            </li>
+            <li class="footer-link"><a href="help.html">Help</a></li>
+            <li class="footer-link"><a href="register.html">Register</a></li>
+            <li class="footer-link"><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--- JAVASCRIPT --->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>
